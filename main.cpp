@@ -2,23 +2,31 @@
 #include <string>
 #include "DynamicArray.h"
 
-
-template<typename T> void printVector(const DynamicArray<T>& vector){
-    for(size_t i = 0; i< vector.Size(); i++){
-        std::cout << vector[i] << " ";
-    }
-}
-
 int main(){
-    DynamicArray<std::string> m;
+    DynamicArray<std::string> arr1;
 
+    arr1.PushBack("asd");
+    arr1.PushBack("dsa");
+    arr1.PushBack("qwe");
+    arr1.PushBack("qwe");
+    arr1.PushBack("qwe");
 
-    m.PushBack("asd");
-    m.PushBack("dsa");
-    m.PushBack("qwe");
+    arr1.PopBack();
+    arr1.PopBack();
+    arr1.PopBack();
+    arr1.PopBack();
 
-    printVector(m);
+    arr1.printArray();
 
+    DynamicArray<int> arr2;
+
+    arr2.PushBack(11);
+    arr2.PushBack(3);
+    arr2.PushBack(44);
+
+    arr2.PopBack();
+
+    arr2.printArray();
 
     return 0;
 }
