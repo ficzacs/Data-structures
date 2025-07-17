@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "DynamicArray.h"
+#include "LinkedList.h"
 
 int main(){
     DynamicArray<std::string> arr1;
@@ -27,6 +28,22 @@ int main(){
     arr2.PopBack();
 
     arr2.printArray();
+
+
+    LinkedList<std::string> l1;
+
+    l1.AppendNode("asd");
+    l1.AppendNode("dsa");
+
+    l1.PrintList();
+
+
+    LinkedList<int> l2;
+
+    l2.AppendNode(1111);
+    l2.AppendNode(2111);
+
+    l2.PrintList();
 
     return 0;
 }
