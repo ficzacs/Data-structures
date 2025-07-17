@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include <list>
 #include "DynamicArray.h"
 #include "LinkedList.h"
+#include "HashTable.h"
 
 int main(){
     DynamicArray<std::string> arr1;
@@ -44,6 +46,15 @@ int main(){
     l2.AppendNode(2111);
 
     l2.PrintList();
+
+    HashMap<int,int> m;
+
+    m.InsertItem(5,5);
+    m.InsertItem(55,55);
+    m.InsertItem(6,6);
+    m.InsertItem(7,7);
+
+    m.printTable();
 
     return 0;
 }
